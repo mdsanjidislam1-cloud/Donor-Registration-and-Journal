@@ -570,7 +570,7 @@ ui <- fluidPage(
                                options = list(create = TRUE, placeholder = "...", onInitialize = I('function(){this.setValue("");}'))),
                 selectizeInput("reference_per", h6("Reference:"), choices = reference_choices, selected = character(0),
                                options = list(create = TRUE, placeholder = "...", onInitialize = I('function(){this.setValue("");}'))),
-                div(textInput("email", h6("Email:")), textOutput("email_msg")),
+                div(textInput("email", h6("Donor Email:")), textOutput("email_msg")),
                 div(textInput("phone", h6("Mobile phone:"), placeholder = phone_placeholder), textOutput("phone_msg")),
                 div(
                   textInput("donor_img_name", h6("Profile picture file name (incl. extension):"), placeholder = "e.g. john_smith.jpg"),
@@ -592,7 +592,7 @@ ui <- fluidPage(
                                options = list(create = TRUE, placeholder = "Enter Organisation's name here", onInitialize = I('function(){this.setValue("");}'))),
                 div(textInput("org_contact_name", h6("Contact Name: "), placeholder = "Insert name here")),
                 div(textInput("org_contact_number", h6("Contact Number"), placeholder = phone_placeholder), textOutput("org_phone_msg")),
-                div(textInput("org_contact_email", h6("Email ID")), textOutput("org_email_msg")),
+                div(textInput("org_contact_email", h6("SPOC Email ID")), textOutput("org_email_msg")),
                 selectizeInput("designation_org", h6("Designation"), choices = designation_choices, selected = character(0),
                                options = list(create = TRUE, placeholder = "Enter Donor's Designation here", onInitialize = I('function(){this.setValue("");}'))),
                 selectizeInput("industry_cat", h6("Industry Category"), choices = industry_choices, selected = character(0),
